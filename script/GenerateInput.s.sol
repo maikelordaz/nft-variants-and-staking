@@ -7,15 +7,15 @@ import {console} from "forge-std/console.sol";
 
 // Merkle tree input file generator script
 contract GenerateInput is Script {
-    uint256 private constant AMOUNT = 25 * 1e18;
-    string[] types = new string[](2);
+    // uint256 private constant AMOUNT = 25 * 1e18;
+    // string[] types = new string[](2);
+    string[] types = new string[](1);
     uint256 count;
     string[] whitelist = new string[](4);
     string private constant INPUT_PATH = "/script/target/input.json";
 
     function run() public {
         types[0] = "address";
-        types[1] = "uint";
         whitelist[0] = "0x6CA6d1e2D5347Bfab1d91e883F1915560e09129D";
         whitelist[1] = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
         whitelist[2] = "0x3904F59DF9199e0d6dC3800af9f6794c9D037eb1";
@@ -30,9 +30,8 @@ contract GenerateInput is Script {
 
     function _createJSON() internal view returns (string memory) {
         string memory countString = vm.toString(count); // convert count to string
-        string memory amountString = vm.toString(AMOUNT); // convert amount to string
         string memory json = string.concat(
-            '{ "types": ["address", "uint"], "count":',
+            '{ "types": ["address"], "count":',
             countString,
             ',"values": {'
         );
@@ -47,10 +46,6 @@ contract GenerateInput is Script {
                     '"',
                     whitelist[i],
                     '"',
-                    ', "1":',
-                    '"',
-                    amountString,
-                    '"',
                     " }"
                 );
             } else {
@@ -62,10 +57,6 @@ contract GenerateInput is Script {
                     ': { "0":',
                     '"',
                     whitelist[i],
-                    '"',
-                    ', "1":',
-                    '"',
-                    amountString,
                     '"',
                     " },"
                 );

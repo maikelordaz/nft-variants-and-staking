@@ -1,0 +1,38 @@
+[
+  {
+    "inputs": ["0x6CA6d1e2D5347Bfab1d91e883F1915560e09129D"],
+    "proof": [
+      "0xd791b4384f11048b2330e9ec924a5c80226526b5e9d7f65537637981af4d404f",
+      "0x7d993094d253d99f1de216861d40d8b1c497ee7e93ad844e9e82ecf29924fa08"
+    ],
+    "root": "0x23cd2dbf5581d58b641bbe9e25bb432ca9e036d360ca1c394232cd18596ad3e6",
+    "leaf": "0xf6949786c44ce4b9916e434fcdb9ff65f5c1c50d4fd00c0c34ce124acb64a922"
+  },
+  {
+    "inputs": ["0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"],
+    "proof": [
+      "0xf6949786c44ce4b9916e434fcdb9ff65f5c1c50d4fd00c0c34ce124acb64a922",
+      "0x7d993094d253d99f1de216861d40d8b1c497ee7e93ad844e9e82ecf29924fa08"
+    ],
+    "root": "0x23cd2dbf5581d58b641bbe9e25bb432ca9e036d360ca1c394232cd18596ad3e6",
+    "leaf": "0xd791b4384f11048b2330e9ec924a5c80226526b5e9d7f65537637981af4d404f"
+  },
+  {
+    "inputs": ["0x3904F59DF9199e0d6dC3800af9f6794c9D037eb1"],
+    "proof": [
+      "0xda1f3d6e53b6c540446fcc0ca30789d965bda72fb49c454695007656f4e3995c",
+      "0x7f8b429f095f9bdb6b79b9c6f511d6ce8a5afde445cdaaf6a48b137ec4e042b2"
+    ],
+    "root": "0x23cd2dbf5581d58b641bbe9e25bb432ca9e036d360ca1c394232cd18596ad3e6",
+    "leaf": "0xee05c2a22b77df2ee66714f062f8ccfe27d1d876c352b2feb4aeaecfb8c4786e"
+  },
+  {
+    "inputs": ["0xd26235AF7919C81470481fF4436B5465B0bbF6F2"],
+    "proof": [
+      "0xee05c2a22b77df2ee66714f062f8ccfe27d1d876c352b2feb4aeaecfb8c4786e",
+      "0x7f8b429f095f9bdb6b79b9c6f511d6ce8a5afde445cdaaf6a48b137ec4e042b2"
+    ],
+    "root": "0x23cd2dbf5581d58b641bbe9e25bb432ca9e036d360ca1c394232cd18596ad3e6",
+    "leaf": "0xda1f3d6e53b6c540446fcc0ca30789d965bda72fb49c454695007656f4e3995c"
+  }
+]
