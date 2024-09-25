@@ -12,7 +12,7 @@ clean  :; forge clean
 # Remove modules
 remove :; rm -rf .gitmodules && rm -rf .git/modules/* && rm -rf lib && touch .gitmodules && git add . && git commit -m "modules"
 
-install :; forge install foundry-rs/forge-std@v1.9.2 --no-commit && forge install OpenZeppelin/openzeppelin-contracts@v5.0.2 --no-commit
+install :; forge install foundry-rs/forge-std@v1.9.2 --no-commit && forge install OpenZeppelin/openzeppelin-contracts@v5.0.2 --no-commit && forge install dmfxyz/murky --no-commit
 
 # Update Dependencies
 update:; forge update
@@ -26,3 +26,9 @@ coverage :; forge coverage
 snapshot :; forge snapshot
 
 anvil :; anvil -m 'test test test test test test test test test test test junk' --steps-tracing --block-time 1
+
+# Generate Merkle Tree input file
+generate :; forge script script/GenerateInput.s.sol:GenerateInput
+
+# Make Merkle Root and Proofs
+makeMerkle :; forge script script/MakeMerkle.s.sol:MakeMerkle
