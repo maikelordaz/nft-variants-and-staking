@@ -4,7 +4,7 @@ pragma solidity 0.8.28;
 import {IERC721Receiver} from "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import {IRewardToken} from "src/interfaces/IRewardToken.sol";
+import {IRewardToken} from "src/ecosystem_1/interfaces/IRewardToken.sol";
 
 contract Staking is IERC721Receiver {
     struct Deposit {
